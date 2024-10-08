@@ -29,10 +29,30 @@
 <body>
 <h1>我的第一份表單</h1>
 <form action="table_gen.php" method="get">
+<fieldset>
+    <legend>性別選擇</legend>
     輸入表格列數:<input type="text" name="row_num" value="5" /> <br/>
     輸入表格行數:<input type="text" name="col_num" value="4"/> <br/>
+    性別<input type="radio" name="gender" value="男" />男生
+    <input type="radio" name="gender" value="女" />女生
+    <input type="radio" name="gender" value="其他" />其他
+    科系
+    <select name="dept">
+        <option value="ee">電機工程系</option>
+        <option value="csie" selected>資訊工程系</option>
+        <option value="me">機械工程系</option>
+    </select><br/>
+    留言:
+    <textarea name="messger" row="4" col="15">
+寫上自己的留言
+    </textarea>
     <input type="submit" value="繳交"/>
     <input type="reset" value="重新輸入"/>
+</fieldset>
+<fieldset>
+    <legend>性別選擇</legend>
+    選擇  選擇
+</fieldset>
 </form>
 
 </body>
